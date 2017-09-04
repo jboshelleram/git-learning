@@ -1,3 +1,14 @@
+
+### How often should I commit, pull, push?
+
+
+| Type             | Frequency                         | Notes              |
+ ----------------- | --------------------------------- | ------------------
+| Commit           | Early and Often               | `'Try to make sure its works. If not, comment it out. 10-20+ a day is possible.'` |
+| Pull             | Few times a day is sufficient | `'Ensure that you are merging in changes as they come from the upstream branch to prevent merge conflicts.'` |
+| Push to working branch             | Never leave without pushing     | `'Use a working branch independent on the main branch which should not be touched.'` |
+| Merge to master  | Done     | `'I trust this code. It is complete. It runs. I have tested it. I am ready for other people to see it.'` |
+
 Format of the commit message
 ----------------------------
 ```
