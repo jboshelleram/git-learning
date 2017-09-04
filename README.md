@@ -1,3 +1,63 @@
+Format of the commit message
+----------------------------
+```
+<type>(<scope>): <subject>
+```
+
+Any line of the commit message cannot be longer 100 characters! This allows the message to be easier to read on github as well as in various git tools.
+
+### Subject line        
+Subject line contains succinct description of the change.
+
+#### Allowed `<type>`
+* feat (feature)
+* fix (bug fix)
+* docs (documentation)
+* style (formatting, missing semi colons, …)
+* refactor
+* test (when adding missing tests)
+* chore (maintain)
+
+#### Allowed `<scope>`
+Scope could be anything specifying place of the commit change. For example $location, $browser, $compile, $rootScope, ngHref, ngClick, ngView, etc...
+
+#### `<subject>` text
+* use imperative, present tense: “change” not “changed” nor “changes”
+* don't capitalize first letter
+* no dot (.) at the end
+
+Examples
+--------
+```
+feat($browser): onUrlChange event (popstate/hashchange/polling)
+```
+
+```
+fix($compile): couple of unit tests for IE9
+```
+
+```
+feat(directive): ng:disabled, ng:checked, ng:multiple, ng:readonly, ng:selected
+```
+
+```
+style($location): add couple of missing semi colons
+```
+
+```
+docs(guide): updated fixed docs from Google Docs
+```
+
+```
+feat($compile): simplify isolate scope bindings
+```
+
+
+
+
+
+
+
 ## Synopsis
 
 At the top of the file there should be a short introduction and/ or overview that explains **what** the project is. This description should match descriptions added for package managers (Gemspec, package.json, etc.)
@@ -36,7 +96,7 @@ A short snippet describing the license (MIT, Apache, etc.)
 
 Welcome to StackEdit!
 ===================
-
+test
 
 Hey! I'm your first Markdown document in **StackEdit**[^stackedit]. Don't delete me, I'm very helpful! I can be recovered anyway in the **Utils** tab of the <i class="icon-cog"></i> **Settings** dialog.
 
