@@ -3,7 +3,32 @@ Create your own branch
 ----------------------------
 
 * How to
-* Branch naming convention
+
+Branch naming convention
+----------------------------
+```
+<initals>/<token>-<scope>-<description> 
+```
+
+#### Allowed `<token>`
+wip       Works in progress; stuff I know won't be finished soon
+feat      Feature I'm adding or expanding
+bug       Bug fix
+junk      Throwaway branch created to investigate/learn
+spike     Experiment that maybe needed later
+
+#### Allowed `<scope>`
+A single term that represents the area of work.
+
+#### Allowed `<description>`
+This can vary. This can be used to version, or give more meaning to the branch.
+
+### Examples  
+
+jb/feat-kitchensink-v2
+jb/bug-kitchensink-utensil
+jb/junk-kitchensink-demo
+
 * Branch maintenance (how & when to delete, see whos used it etc)
 
 
