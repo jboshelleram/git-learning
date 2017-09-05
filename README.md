@@ -1,4 +1,6 @@
 
+![Alt text](readme/images/lifecycle.png?raw=true "Git Life Cycle")
+
 How often should I commit, pull, push?
 ----------------------------
 
@@ -6,8 +8,8 @@ How often should I commit, pull, push?
  ----------------- | --------------------------------- | ------------------
 | Commit           | Early and Often               | `'Try to make sure its works. If not, comment it out. But don't be afraid to commit.'` |
 | Pull             | Few times a day is sufficient | `'Ensure that you are merging in changes as they come from the upstream branch to prevent merge conflicts and bugs.'` |
-| Push             | Never leave without pushing     | `'Use a working branch independent of the main branch which should not be touched by others. This will make life easier we restructuring your commits before merging back to master.'` |
-| Merge to back master  | When Done     | `'I trust this code. It is complete. It runs. I have tested it. Restructured your commits. I am ready for other people to see it.'` |
+| Push             | Never leave without pushing     | `'Use a working branch independent of the main branch which should not be touched by others. This will make life easier when restructuring your commits before merging back to master.'` |
+| Merge to back master  | When Done     | `'I trust this code. It is complete. It runs. I have tested it. I have restructured my commits. I am ready for other people to see it.'` |
 
 
 Git Commit Good Practice
