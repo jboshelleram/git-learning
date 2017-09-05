@@ -4,10 +4,10 @@ How often should I commit, pull, push?
 
 | Type             | Frequency                         | Notes              |
  ----------------- | --------------------------------- | ------------------
-| Commit           | Early and Often               | `'Try to make sure its works. If not, comment it out. 10-20+ a day is possible.'` |
+| Commit           | Early and Often               | `'Try to make sure its works. If not, comment it out. But don't be afraid to commit.'` |
 | Pull             | Few times a day is sufficient | `'Ensure that you are merging in changes as they come from the upstream branch to prevent merge conflicts and bugs.'` |
-| Push             | Never leave without pushing     | `'Use a working branch independent of the main branch which should not be touched.'` |
-| Merge to back master  | When Done     | `'I trust this code. It is complete. It runs. I have tested it. I am ready for other people to see it.'` |
+| Push             | Never leave without pushing     | `'Use a working branch independent of the main branch which should not be touched by others. This will make life easier we restructuring your commits before merging back to master.'` |
+| Merge to back master  | When Done     | `'I trust this code. It is complete. It runs. I have tested it. Restructured your commits. I am ready for other people to see it.'` |
 
 
 Git Commit Good Practice
@@ -15,7 +15,7 @@ Git Commit Good Practice
 
 ## Do's
 
-* Only one "logical change" per commit
+* Only one "logical change" per commit. Per type-scope?
 
 ## Dont's
 
