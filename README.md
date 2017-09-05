@@ -11,11 +11,11 @@ Branch naming convention
 ```
 
 #### Allowed `<token>`
-wip       Works in progress; stuff I know won't be finished soon
-feat      Feature I'm adding or expanding
-bug       Bug fix
-junk      Throwaway branch created to investigate/learn
-spike     Experiment that maybe needed later
+*wip       `'Works in progress; stuff I know won't be finished soon'`
+*feat      `'Feature I'm adding or expanding'`
+*bug       `'Bug fix'`
+*junk      `'Throwaway branch created to investigate/learn'`
+*spike     `'Experiment that maybe needed later'`
 
 #### Allowed `<scope>`
 A single term that represents the area of work.
