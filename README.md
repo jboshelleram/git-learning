@@ -1,15 +1,29 @@
 
-### How often should I commit, pull, push?
-
+How often should I commit, pull, push?
+----------------------------
 
 | Type             | Frequency                         | Notes              |
  ----------------- | --------------------------------- | ------------------
 | Commit           | Early and Often               | `'Try to make sure its works. If not, comment it out. 10-20+ a day is possible.'` |
-| Pull             | Few times a day is sufficient | `'Ensure that you are merging in changes as they come from the upstream branch to prevent merge conflicts.'` |
-| Push to working branch             | Never leave without pushing     | `'Use a working branch independent on the main branch which should not be touched.'` |
-| Merge to master  | Done     | `'I trust this code. It is complete. It runs. I have tested it. I am ready for other people to see it.'` |
+| Pull             | Few times a day is sufficient | `'Ensure that you are merging in changes as they come from the upstream branch to prevent merge conflicts and bugs.'` |
+| Push             | Never leave without pushing     | `'Use a working branch independent of the main branch which should not be touched.'` |
+| Merge to back master  | When Done     | `'I trust this code. It is complete. It runs. I have tested it. I am ready for other people to see it.'` |
 
-Format of the commit message
+
+Git Commit Good Practice
+----------------------------
+
+## Do's
+
+* Only one "logical change" per commit
+
+## Dont's
+
+* Mixing whitespace changes with functional code changes.
+* Mixing two unrelated functional changes
+* Sending large new features in a single giant commit.
+
+Commit Comments
 ----------------------------
 ```
 <type>(<scope>): <subject>
@@ -22,12 +36,33 @@ Subject line contains succinct description of the change.
 
 #### Allowed `<type>`
 * feat (feature)
+```
+feat($browser): onUrlChange event (popstate/hashchange/polling)
+```
 * fix (bug fix)
+```
+fix($compile): couple of unit tests for IE9
+```
 * docs (documentation)
+```
+docs(guide): updated fixed docs from Google Docs
+```
 * style (formatting, missing semi colons, …)
+```
+style($location): add couple of missing semi colons
+```
 * refactor
+```
+refactor: share logic between 4d3d3d3 and flarhgunnstow
+```
 * test (when adding missing tests)
-* chore (maintain)
+```
+test(config): adding missing tests
+```
+* chore
+```
+chore: updating grunt tasks etc; no production code change
+```
 
 #### Allowed `<scope>`
 Scope could be anything specifying place of the commit change. For example $location, $browser, $compile, $rootScope, ngHref, ngClick, ngView, etc...
@@ -37,37 +72,12 @@ Scope could be anything specifying place of the commit change. For example $loca
 * don't capitalize first letter
 * no dot (.) at the end
 
-Examples
---------
-```
-feat($browser): onUrlChange event (popstate/hashchange/polling)
-```
 
 ```
-fix($compile): couple of unit tests for IE9
-```
 
-```
-feat(directive): ng:disabled, ng:checked, ng:multiple, ng:readonly, ng:selected
-```
+https://hashnode.com/post/what-tips-and-guidelines-do-you-follow-while-writing-git-commit-messages-cimorctip0010oz53hibbt5a3
 
-```
-style($location): add couple of missing semi colons
-```
-
-```
-docs(guide): updated fixed docs from Google Docs
-```
-
-```
-feat($compile): simplify isolate scope bindings
-```
-
-
-
-
-
-
+https://wiki.openstack.org/wiki/GitCommitMessages
 
 ## Synopsis
 
