@@ -3,7 +3,7 @@ Create your own branch
 ----------------------------
 
 * How to
-* Branch naming covention
+* Branch naming convention
 * Branch maintenance (how & when to delete, see whos used it etc)
 
 
