@@ -25,9 +25,9 @@ This can vary. This can be used to version, or give more meaning to the branch.
 
 ### Examples  
 
-jb/feat-kitchensink-v2
-jb/bug-kitchensink-utensil
-jb/junk-kitchensink-demo
+* jb/feat-kitchensink-v2
+* jb/bug-kitchensink-utensil
+* jb/junk-kitchensink-demo
 
 * Branch maintenance (how & when to delete, see whos used it etc)
 
@@ -40,7 +40,7 @@ Git Lifecycle
 Keeping your branch up to date
 ----------------------------
 
-* Notes and images explaining the importance of master pulling master and merging into your own branch
+![Alt text](readme/images/uptodate.png?raw=true "Git Life Cycle")
 
 How often should I commit, pull, push, merge?
 ----------------------------
@@ -48,7 +48,7 @@ How often should I commit, pull, push, merge?
 | Type             | Frequency                         | Notes              |
  ----------------- | --------------------------------- | ------------------
 | Commit           | Early and Often               | `'Try to make sure its works. If not, comment it out. But don't be afraid to commit.'` |
-| Pull             | Few times a day is sufficient | `'Ensure that you are merging in changes as they come from the upstream branch to prevent merge conflicts and bugs.'` |
+| Pull             | Few times a day is sufficient | `'Ensure that you are merging in changes as they come from the upstream branch to prevent merge conflicts and help identify bugs early.'` |
 | Push             | Never leave without pushing     | `'Use a working branch independent of the main branch which should not be touched by others. This will make life easier when restructuring your commits before merging back to master.'` |
 | Merge to back master  | When Done     | `'I trust this code. It is complete. It runs. I have tested it. I have restructured my commits. I am ready for other people to see it.'` |
 
