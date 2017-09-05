@@ -43,7 +43,9 @@ Keeping your branch up to date
 
 ![Alt text](readme/images/uptodate.png?raw=true "Git Life Cycle")
 
-As you commit through the day *as shown in the orange circles above.* Others will update master. This will require you to update your local master. And merge that into your own branch.
+As you commit through the day *as shown in the orange circles above.* Others will update master. This will require you to update your local master (from the remote master). And then merge into your own branch.
+
+TODO: show example of screens shots, upating local master, then merging. Then pushing "own branch" to git remote.
 
 How often should I commit, pull, push, merge?
 ----------------------------
