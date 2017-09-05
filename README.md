@@ -3,6 +3,7 @@ Create your own branch
 ----------------------------
 
 * How to
+* Have a local master (or what ever branch your working off)
 
 Branch naming convention
 ----------------------------
@@ -42,15 +43,17 @@ Keeping your branch up to date
 
 ![Alt text](readme/images/uptodate.png?raw=true "Git Life Cycle")
 
+As you commit through the day *as shown in the orange circles above.* Others will update master. This will require you to update your local master. And merge that into your own branch.
+
 How often should I commit, pull, push, merge?
 ----------------------------
 
 | Type             | Frequency                         | Notes              |
  ----------------- | --------------------------------- | ------------------
 | Commit           | Early and Often               | `'Try to make sure its works. If not, comment it out. But don't be afraid to commit.'` |
-| Pull             | Few times a day is sufficient | `'Ensure that you are merging in changes as they come from the upstream branch to prevent merge conflicts and help identify bugs early.'` |
+| Pull (& merge to own branch)            | Few times a day is sufficient | `'Ensure that you are merging in changes as they come from the upstream branch to prevent merge conflicts and help identify bugs early.'` |
 | Push             | Never leave without pushing     | `'Use a working branch independent of the main branch which should not be touched by others. This will make life easier when restructuring your commits before merging back to master.'` |
-| Merge to back master  | When Done     | `'I trust this code. It is complete. It runs. I have tested it. I have restructured my commits. I am ready for other people to see it.'` |
+| Merge own branch to master  | When Done     | `'I trust this code. It is complete. It runs. I have tested it. I have restructured my commits. I am ready for other people to see it.'` |
 
 
 Git Commit Good Practice
