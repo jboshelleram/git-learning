@@ -3,8 +3,20 @@ Create your own branch
 ----------------------------
 
 * How to
+* Why do we need to copy master?
+When you checkout a branch it will consist of a local and remote version. Think of a
+local repo as a your tempry copy and remote as the secure backup (well until you push to that branch). 
+If we checkedout master
+
 * Have a local master (or what ever branch your working off)
 
+Explain
+* Commit (Saves local changes, doesn't send to master. Simply aloows you to locally undo, revert etc)
+* Pull (This fetches and merges form remote to local on a specific branch e.g.)
+* Push (this moves all your local commits to your remote repo, I.e. saves your work)
+* Merge (integrate changes from one branch into another branch, This creates a new “merge commit” in the feature branch that ties together the histories of both branches. Show each commit isn't shown like normal. )
+
+https://bocoup.com/blog/git-workflow-walkthrough-feature-branches
 Branch naming convention
 ----------------------------
 ```
@@ -54,7 +66,7 @@ How often should I commit, pull, push, merge?
  ----------------- | --------------------------------- | ------------------
 | Commit           | Early and Often               | `'Try to make sure its works. If not, comment it out. But don't be afraid to commit.'` |
 | Pull (& merge to own branch)            | Few times a day is sufficient | `'Ensure that you are merging in changes as they come from the upstream branch to prevent merge conflicts and help identify bugs early.'` |
-| Push             | Never leave without pushing     | `'Use a working branch independent of the main branch which should not be touched by others. This will make life easier when restructuring your commits before merging back to master.'` |
+| Push             | Never leave without pushing     | `'Your own branch is independent of the main branch which should not be touched by others. This will make life easier when restructuring your commits before merging back to master.'` |
 | Merge own branch to master  | When Done     | `'I trust this code. It is complete. It runs. I have tested it. I have restructured my commits. I am ready for other people to see it.'` |
 
 
